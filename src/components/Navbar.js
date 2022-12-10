@@ -96,11 +96,14 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blogs.soumya-jit.tech/"
-                target="_blank"
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+                // href="https://blogs.soumya-jit.tech/"
+                // target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: '2px' }} /> Blogs
+                <ImBlog style={{ marginBottom: '2px' }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
