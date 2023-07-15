@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+
 import { Container, Row } from 'react-bootstrap';
+import { Document, Page, pdfjs } from 'react-pdf';
+import React, { useEffect, useState } from 'react';
+
+import { AiOutlineDownload } from 'react-icons/ai';
 import Button from 'react-bootstrap/Button';
 import Particle from '../Particle';
 import pdf from '../../Assets/../Assets/Sakkar_Chowdhury_Resume.pdf';
-import { AiOutlineDownload } from 'react-icons/ai';
-import { Document, Page, pdfjs } from 'react-pdf';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  'https://raw.githubusercontent.com/SkrChowdhury/reactjs-portfolio/56cd6f26f2611149a3d0b0b11c2b624e373fb57d/src/Assets/Sakkar_Chowdhury_Resume.pdf';
+  'https://raw.githubusercontent.com/SkrChowdhury/reactjs-portfolio/25bbe00b5bae0b935f4156823f169ea680e95d93/src/Assets/Sakkar_Chowdhury_Resume.pdf';
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);

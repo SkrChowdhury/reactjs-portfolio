@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
 import { Button, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import React, { useRef } from 'react';
+
+import Home from '../Home/Home';
 import Particle from '../Particle';
 import { Player } from '@lottiefiles/react-lottie-player';
 import emailjs from '@emailjs/browser';
-import Home from '../Home/Home';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 
 const Contact = () => {
@@ -38,7 +39,7 @@ const Contact = () => {
   return (
     <div>
       <Container fluid className="project-section">
-        {/* <Particle /> */}
+        <Particle />
 
         <Container
           className=""
