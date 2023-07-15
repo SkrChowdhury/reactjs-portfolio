@@ -40,7 +40,7 @@ function Projects() {
               description="Doctors Portal is a Dental Care Appointment booking website where users can book appointments and admin can see all bookings and delete users and give users admin access.
 "
               ghLink="https://github.com/SkrChowdhury/reactjs-doctors-portal-client-side"
-              demoLink="doctors-portal-dental-care.netlify.app"
+              demoLink="https://doctors-portal-dental-care.netlify.app"
             />
           </Col>
 
@@ -71,10 +71,9 @@ function Projects() {
               imgPath={suicide}
               isBlog={false}
               title="Best 5 PSG Players"
-              description="A Website to select best 5 players from PSG Foot Club. 
- "
+              description="A Website to select best 5 players from PSG Foot Club."
               ghLink="https://github.com/SkrChowdhury/selecting-best-five-playes-javascript"
-              demoLink="psg-best-five-players.netlify.app"
+              demoLink="https://psg-best-five-players.netlify.app"
             />
           </Col>
           <Col md={6} lg={4} className="project-card">
